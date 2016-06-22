@@ -1,0 +1,89 @@
+/*
+ * CSS for Chevron Left and Right.
+ *
+ * Example <div class="chevronR"> </div>
+ */
+
+.chevronR {
+  position: absolute;
+  text-align: center;
+  height: 3px;
+  top: 15px;
+  width: 20px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.chevronR:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: #000;
+  -webkit-transform: skew(0deg, 20deg);
+  -moz-transform: skew(0deg, 20deg);
+  -ms-transform: skew(0deg, 20deg);
+  -o-transform: skew(0deg, 20deg);
+  transform: skew(0deg, 20deg);
+}
+.chevronR:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #000;
+  -webkit-transform: skew(0deg, -20deg);
+  -moz-transform: skew(0deg, -20deg);
+  -ms-transform: skew(0deg, -20deg);
+  -o-transform: skew(0deg, -20deg);
+  transform: skew(0deg, -20deg);
+}
+.chevronL {
+  position: absolute;
+  text-align: center;
+  height: 3px;
+  left: 2px;
+  top: -2px;
+  width: 10px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.chevronL:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: #000;
+  -webkit-transform: skew(0deg, 40deg);
+  -moz-transform: skew(0deg, 40deg);
+  -ms-transform: skew(0deg, 40deg);
+  -o-transform: skew(0deg, 40deg);
+  transform: skew(0deg, 40deg);
+}
+
+.chevronL:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #000;
+  -webkit-transform: skew(0deg, -40deg);
+  -moz-transform: skew(0deg, -40deg);
+  -ms-transform: skew(0deg, -40deg);
+  -o-transform: skew(0deg, -40deg);
+  transform: skew(0deg, -40deg);
+}
