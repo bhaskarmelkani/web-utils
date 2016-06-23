@@ -26,3 +26,16 @@ HTMLElement.prototype.removeClass = function(c) {
   x.splice(x.indexOf(c), 1);
   return this.className = x.join('  '), this;
 }
+
+/*
+ * hasClass(className)
+ *
+ * returns true/false.
+ *
+ * Example: document.getElementById('abc').hasClass('hidden')
+ *
+ */
+HTMLElement.prototype.hasClass = function(c) {
+  var x = this.className.split(' ');
+  return !!~x.indexOf(c);
+}
