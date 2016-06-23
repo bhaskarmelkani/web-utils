@@ -39,3 +39,24 @@ HTMLElement.prototype.hasClass = function(c) {
   var x = this.className.split(' ');
   return !!~x.indexOf(c);
 }
+
+/*
+ * trigger('click')
+ *
+ * To trigger DOM events like you do in jQuery. 
+ *
+ * Example: document.getElementById('abc').trigger('click')
+ *
+ */
+HTMLElement.prototype.trigger = function(c) {
+  if(!c)
+    return this;
+  if ("createEvent" in document) {
+    var evt = document.createEvent("HTMLEvents");
+    evt.initEvent(c, false, true);
+    this.dispatchEvent(evt);
+  }
+  else
+    this.fireEvent(c);
+  return this;
+}
