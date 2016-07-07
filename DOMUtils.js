@@ -60,3 +60,15 @@ HTMLElement.prototype.trigger = function(c) {
     this.fireEvent(c);
   return this;
 }
+
+/*
+ * getElementById('id')
+ *
+ * Returns element by id that can be further searched for elements.
+ *
+ * Example: document.getElementById('outerElement').getElementById('innerElement')
+ *
+ */
+Element.prototype.getElementById = function(id) {
+    return document.getElementById(id);
+}
