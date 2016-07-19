@@ -1,0 +1,21 @@
+<style>
+img {  
+  font-weight: 300;
+  line-height: 2;  
+  text-align: center;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+
+img:after {  
+  content: attr(alt);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+</style>
