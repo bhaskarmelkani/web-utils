@@ -1,5 +1,5 @@
 <style>
-img {  
+img {
   font-weight: 300;
   line-height: 2;  
   text-align: center;
@@ -7,7 +7,6 @@ img {
   display: inline-block;
   position: relative;
 }
-
 img:after {  
   content: attr(alt);
   display: inline-block;
