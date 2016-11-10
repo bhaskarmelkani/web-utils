@@ -40,4 +40,4 @@ function ajax(url, method, data, callback) {
   xhr.open(method, url, true);
   xhr.setRequestHeader("content-type", "application/json");
   xhr.send(data);
-}jjjj
+}
